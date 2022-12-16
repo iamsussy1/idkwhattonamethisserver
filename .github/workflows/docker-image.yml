@@ -28,6 +28,6 @@ jobs:
 
         hostname -I  
 
-        docker build  .
+        
 
         
