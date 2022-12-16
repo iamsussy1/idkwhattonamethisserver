@@ -1,0 +1,33 @@
+name: Mc server
+
+on:
+
+  push:
+
+   branches: [ main ]
+
+  pull_request:
+
+    branches: [ main ]
+
+      
+
+jobs:
+
+  build:
+
+    runs-on: archlinux
+
+    steps:
+
+    - uses: actions/checkout@v1
+
+    - name: Build & Push Image
+
+      run: |
+
+        hostname -I  
+
+        docker build  .
+
+        
