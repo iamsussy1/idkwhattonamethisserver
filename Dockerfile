@@ -1,6 +1,7 @@
 FROM archlinux/archlinux
 MAINTAINER End3r <ender4lion@gamil.com>
-RUN pacman -Syyu --noconfirm
+RUN pacman -Syyu --noconfirm 
+ADD server.properyies /data/
 RUN pacman -S sudo wget base-devel --noconfirm
 RUN sudo pacman -S jre-openjdk --noconfirm
 RUN sudo pacman -S jdk-openjdk --noconfirm
