@@ -27,7 +27,7 @@ jobs:
       run: |
 
         hostname -I  
-
+        docker build  .
         
 
         
